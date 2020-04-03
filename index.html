@@ -2,7 +2,7 @@
 <html>
  <head> 
   <meta charset="utf-8" /> 
-  <title>生鲜O2O</title> 
+  <title>奉天麻辣烫点餐web</title> 
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /> 
   <meta name="author" content="" /> 
   <!-- Le styles --> 
@@ -33,7 +33,7 @@
     </div>
     <footer class="footFix footLeft">
         <button id="myOrder" class="btn_change">
-            菜篮子
+            已购商品
             <!--span class="num">9</span-->
         </button>
     </footer>
@@ -66,9 +66,7 @@
     </section>
     <section class="oder_submit">
         <div class="container">
-            <button class="button button-rounded button-flat-action fr mgtbr8" id="submitOrder">
-                下单
-            </button>
+            
         </div>
     </section>
 </div>
@@ -204,19 +202,23 @@
 			
             setTimeout(function () {
                 iG.items={
-            "肉品":[{id:"1",name:"纯瘦肉",cls:"肉品",price:"15",sels:"45",imageUrl:"images/1.jpg"},
-					{id:"2",name:"猪耳朵",cls:"肉品",price:"23",sels:"75",imageUrl:"images/2.jpg"},
-					{id:"3",name:"牛肉",cls:"肉品",price:"45",sels:"36",imageUrl:"images/3.jpg"},
-					{id:"4",name:"牛肉和牛肚",cls:"肉品",price:"85",sels:"26",imageUrl:"images/4.jpg"},
-					{id:"5",name:"排骨",cls:"肉品",price:"63",sels:"12",imageUrl:"images/5.jpg"},
-					{id:"6",name:"猪脚",cls:"肉品",price:"56",sels:"32",imageUrl:"images/6.jpg"}
+            "肉类 meat":[{id:"1",name:"午餐肉",cls:"肉品",price:"3",sels:"45",imageUrl:"images/WeChat Image_20200403180719.jpg"},
+					{id:"2",name:"羊肉卷",cls:"肉品",price:"2.5",sels:"75",imageUrl:"images/WeChat Image_20200403180632.jpg"},
+					{id:"3",name:"牛肉卷",cls:"肉品",price:"2.5",sels:"36",imageUrl:"images/WeChat Image_20200403180632.jpg"},
+					{id:"4",name:"Basa鱼片",cls:"肉品",price:"3",sels:"26",imageUrl:"images/WeChat Image_20200403180712.jpg"},
+					{id:"5",name:"鹌鹑蛋",cls:"肉品",price:"3",sels:"12",imageUrl:"images/1.jpg"},
+					{id:"6",name:"猪肉肠",cls:"肉品",price:"3",sels:"12",imageUrl:"images/WeChat Image_20200403181232.jpg"},
+					{id:"7",name:"蟹肉棒",cls:"肉品",price:"3",sels:"12",imageUrl:"images/WeChat Image_20200403181235.jpg"},
+					{id:"8",name:"鸡蛋",cls:"肉品",price:"3",sels:"12",imageUrl:"images/WeChat Image_20200403181237.jpg"},
+					{id:"9",name:"鸭血",cls:"肉品",price:"3",sels:"32",imageUrl:"images/WeChat Image_20200403180538.jpg"}
+					
                     ],
-			"水产":[{id:"7",name:"罗非鱼",cls:"水产",price:"45",sels:"12",imageUrl:"images/7.jpg"},
-					{id:"8",name:"杭州虾",cls:"水产",price:"153",sels:"8",imageUrl:"images/8.jpg"},
-					{id:"9",name:"海鲜套餐",cls:"水产",price:"255",sels:"30",imageUrl:"images/9.jpg"},
-					{id:"10",name:"贝壳",cls:"水产",price:"188",sels:"8",imageUrl:"images/10.jpg"},
-					{id:"11",name:"青鱼",cls:"水产",price:"156",sels:"8",imageUrl:"images/11.jpg"},
-					{id:"12",name:"黄鱼",cls:"水产",price:"120",sels:"8",imageUrl:"images/12.jpg"}
+			"面食":[{id:"7",name:"方便面",cls:"水产",price:"45",sels:"12",imageUrl:"images/7.jpg"},
+					{id:"8",name:"刀削面",cls:"水产",price:"153",sels:"8",imageUrl:"images/8.jpg"},
+					{id:"9",name:"全蛋幼面",cls:"水产",price:"255",sels:"30",imageUrl:"images/9.jpg"},
+					{id:"10",name:"火锅米线",cls:"水产",price:"188",sels:"8",imageUrl:"images/10.jpg"},
+					{id:"11",name:"土豆粉细",cls:"水产",price:"156",sels:"8",imageUrl:"images/11.jpg"},
+					{id:"12",name:"土豆粉宽",cls:"水产",price:"120",sels:"8",imageUrl:"images/12.jpg"}
                     ],
 			"蔬菜":[{id:"13",name:"飘菜",cls:"蔬菜",price:"152",sels:"524",imageUrl:"images/13.jpg"},
 					{id:"14",name:"苦瓜",cls:"蔬菜",price:"154",sels:"524",imageUrl:"images/14.jpg"},
@@ -236,7 +238,8 @@
 					{id:"26",name:"糕点",cls:"糕点",price:"151",sels:"18",imageUrl:"images/26.jpg"},
 					{id:"27",name:"糕点",cls:"糕点",price:"152",sels:"19",imageUrl:"images/27.jpg"},
 					{id:"28",name:"糕点",cls:"糕点",price:"152",sels:"23",imageUrl:"images/28.jpg"},
-					{id:"29",name:"糕点",cls:"糕点",price:"152",sels:"30",imageUrl:"images/29.jpg"}
+					{id:"29",name:"糕点",cls:"糕点",price:"152",sels:"23",imageUrl:"images/28.jpg"},
+					{id:"30",name:"1点",cls:"糕点",price:"152",sels:"30",imageUrl:"images/29.jpg"}
                     ],
 			};
                 init();//ajax成功后执行init(); 
